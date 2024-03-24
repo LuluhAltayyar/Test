@@ -3,13 +3,16 @@ package Day3;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class TC01 {
-
+public class TC02 {
     public static void main(String[] args) {
+
+
         WebDriver driver = new ChromeDriver();
 
-        driver.get("https://www.w3schools.com/");
-        driver.get("https://stackoverflow.com/");
+        driver.get("https://www.yahoo.com");
+        driver.manage().window().maximize();
+        driver.get("https://www.amazon.com");
+        driver.manage().window().maximize();
 
         driver.navigate().back();
 
@@ -19,7 +22,5 @@ public class TC01 {
 
 
         driver.quit();
-
-
     }
 }
